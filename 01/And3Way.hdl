@@ -1,0 +1,13 @@
+
+/**
+ * And3Way:
+ */
+
+CHIP And3Way {
+    IN a, b, c;
+    OUT out;
+
+    PARTS:
+    And(a=a, b=b, out=about);
+    And(a=about, b=c, out=out);
+}

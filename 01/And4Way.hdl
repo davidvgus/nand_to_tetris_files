@@ -1,0 +1,16 @@
+
+
+/**
+ * And3Way:
+ */
+
+CHIP And4Way {
+    IN a, b, c, d;
+    OUT out;
+
+    PARTS:
+    And(a=a, b=b, out=AandB);
+    And(a=c, b=d, out=CandD);
+
+    And(a=AandB, b=CandD, out=out);
+}
